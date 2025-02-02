@@ -34,6 +34,49 @@ document, addEventListener("DOMContentLoaded", function (){
     else {
         console.log("Нечётное число");
     }
+
+    //4
+    const secretNumber = 7;
+    let uzer = prompt("Угадай число от 1-10:");
+    if (uzer == secretNumber) {
+        console.log("Вы угадали!");
+    }
+
+    else{
+        console.log("Вы не угадали :(");
+    }
     
+    //5
+    let login = prompt ("Введите логин:");
+    let password = prompt ("Введите пароль:");
+    if ( login === "admin" && password === "12345" ) {
+        console.log("Добро пожаловать!");
+    }
+    else{
+        console.log("Неверный логин или пароль");
+    }
+    
+    //6
+    const year = prompt("Введите год:");
+    if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+        console.log("Это високосный год");
+    } 
+    else {
+        console.log("Это не високосный год");
+    }
+
+    //7
+    const number = prompt("Введите число:");
+    if (number > 100) {
+        console.log("Большое число");
+    } 
+    else if (number < 100) {
+        console.log("Маленькое число");
+    } 
+    else {
+        console.log("Точно 100!");
+    }
+
+
 
 });
